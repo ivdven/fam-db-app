@@ -4,7 +4,7 @@ import { validateUser } from '../../validators/auth/userValidator';
 
 const router = Router();
 
-router.get('/get', getUsers);
+router.get('/', getUsers);
 router.post('/register', validateUser, createUser);
 
 export default router;
