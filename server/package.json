@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "server.ts",
   "scripts": {
-    "test": "jest",
+    "test": "NODE_ENV=test jest",
     "dev": "ts-node src/server.ts",
     "build": "tsc",
     "start": "node dist/server.js",
@@ -28,7 +28,9 @@
     "@types/express": "^5.0.3",
     "@types/jest": "^30.0.0",
     "@types/node": "^24.1.0",
+    "@types/supertest": "^6.0.3",
     "jest": "^30.0.5",
+    "mockingoose": "^2.16.2",
     "nodemon": "^3.1.10",
     "supertest": "^7.1.4",
     "ts-jest": "^29.4.0",
